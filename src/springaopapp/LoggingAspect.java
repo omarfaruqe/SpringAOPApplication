@@ -16,13 +16,13 @@ import org.aspectj.lang.annotation.Pointcut;
 @Aspect
 public class LoggingAspect {
     
-//    @Before("execution(public String getName())") for any class
-//    @Before("execution(public String springaopapp.Triangle.getName())")    for Triangle Class only
-//    @Before("execution(public String springaopapp.*.getName())")       for any class in this package 
-//    @Before("execution(public * get*())") // Wild card 
-//    @Before("execution(* get*())") // Wild card for no arguments
-//    @Before("execution(* get*(*))") // Wild card for 1 or more arguments
-//    @Before("execution(* get*(..))") // Wild card for 0 or more arguments
+    @Before("execution(public String getName())") for any class
+    @Before("execution(public String springaopapp.Triangle.getName())")    for Triangle Class only
+    @Before("execution(public String springaopapp.*.getName())")       for any class in this package 
+    @Before("execution(public * get*())") // Wild card 
+    @Before("execution(* get*())") // Wild card for no arguments
+    @Before("execution(* get*(*))") // Wild card for 1 or more arguments
+    @Before("execution(* get*(..))") // Wild card for 0 or more arguments
        @Before("allMethodForCircle()") // Pointcut
     public void LoggingAdvice(){
         System.out.println("Advice run. Get Method called");
