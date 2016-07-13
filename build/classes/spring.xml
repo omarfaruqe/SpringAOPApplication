@@ -9,7 +9,7 @@
 
     <!-- bean definition & AOP specific configuration -->
 
-    <!--<aop:aspectj-autoproxy/>-->
+    <aop:aspectj-autoproxy/>
 
 
     <bean id="triangle" class="springaopapp.Triangle">
@@ -22,6 +22,6 @@
 
     <bean id="shapeService" class="springaopapp.ShapeService" autowire="byName" />
     
-    <!--<bean id="loggingAspect" class="springaopapp.LoggingAspect"/>-->
+    <bean id="loggingAspect" class="springaopapp.LoggingAspect"/>
     
 </beans>
